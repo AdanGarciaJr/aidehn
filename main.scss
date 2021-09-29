@@ -1,0 +1,125 @@
+//main.scss
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$primary-font: Bebas Neue;
+$color-royal:#2F5D8C;
+$color-linen:#F9F6E4;
+$color-night:#0D0D0D;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: $primary-font;
+}
+header{
+    background-color: $color-royal;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 12rem;
+    letter-spacing: -4px;
+    text-align: center;
+    background-color: transparent;
+    color: $color-linen;
+    animation: mainTitle 1s cubic-bezier(0.280, -0.300, 0.085, 1.315);
+    transition: 1s;
+}
+h1:hover{
+    transform: scale(1.1) rotate(5deg);
+    
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+
+}
+footer h3{
+    text-align: center;
+    font-size: 4.2rem;
+}
+
+ul{
+    list-style: none;
+    font-family: $primary-font;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    background-color: $color-night;
+}
+.navigation a, .navigation li{
+    display: inline-block;
+    padding:0 3rem;
+    color: $color-linen;
+    padding: 1rem;
+    animation: headerList 1s ease-in;
+    transition: .2s;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-linen;
+    padding: 2rem;
+    
+}
+main section{
+    width: calc(100%/3);
+}
+@keyframes mainTitle{
+    0%{letter-spacing: 100px;}
+    100%{letter-spacing: -4px;}
+}
+@keyframes headerList{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+footer ul, footer a{
+    font-family: $primary-font;
+    background-color: transparent;
+}
+footer{
+    background-color: $color-royal;
+    color: $color-linen;
+}
+footer section{
+
+    //display: flex;
+    // flex-wrap: wrap;
+}
+#facebook img{
+    width: 40px;
+}
+#insta img{
+    width: 40px;
+}
+#youtube img{
+    width: 40px;
+}
+.socials li{
+    display: inline-block;
+    padding: 1rem;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.socials li:hover{
+    filter: none;
+    transform: scale(1.1);
+}
