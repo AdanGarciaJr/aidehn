@@ -1,0 +1,24 @@
+html{
+    font-size: 62.5%;
+    font-family: $primary-font;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 12rem;
+    letter-spacing: -4px;
+    text-align: center;
+    background-color: transparent;
+    
+    animation: mainTitle 1s cubic-bezier(0.280, -0.300, 0.085, 1.315);
+    transition: 1s;
+    a{
+        text-decoration: none;
+        color: $color-linen;
+    }
+}
+h1:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+header{
+    background-color: $color-royal;
+}
